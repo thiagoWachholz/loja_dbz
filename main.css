@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header div img {
+    height: 72px;
+    margin-right: 16px;
+}
+
+header {
+    background-color: orangered;
+    margin-bottom: 32px;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.topics {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.topics li {
+    padding: 8px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    margin-bottom: 32px;
+}
+
+main > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+main div div > h2 {
+    color: orangered;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid orangered;
+}
+
+main div img {
+    height: 480px;
+    margin-right: 16px;
+}
+
+.produtos h1 {
+    color: orangered;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid orangered;
+}
+
+.produtos ul {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 5%;
+    row-gap: 5%;
+    list-style: none;
+}
+
+.produto img {
+    height: 240px;
+}
+
+.produto img,
+.produto h2,
+.produto h3,
+.produto button {
+    margin-bottom: 8px;
+}
+
+.produto button {
+    padding: 8px;
+    color: #fff;
+    border: none;
+    background-color: orangered;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.produto button:hover {
+    color: orangered;
+    background-color: #000;
+}
+
+@media screen and (max-width: 1024px){
+    .container {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        background-color: orangered;
+        margin-bottom: 32px;
+    }
+    
+    main > div {
+        display: block;
+    }
+
+    main > div img {
+        height: 640px;
+        margin-bottom: 16px;
+        margin-right: 0px;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+        row-gap: 5%;
+        list-style: none;
+    }
+
+    .produto img {
+        height: 300px;
+    }
+
+    .produto button {
+        padding: 8px;
+        color: #fff;
+        border: none;
+        background-color: #000;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .container {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header > div {
+        display: block;
+        align-items: center;
+        font-size: 24px;
+        color: #fff;
+    }
+
+    header div ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    header div div {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 12px;
+    }
+
+    main > div {
+        display: block;
+    }
+
+    main > div img {
+        height: 320px;
+        margin-bottom: 16px;
+        margin-right: 0px;
+    }
+
+    .produtos ul {
+        display: grid;
+        grid-template-columns: 100%;
+        list-style: none;
+    }
+
+    .produto img {
+        height: 300px;
+    }
+}
